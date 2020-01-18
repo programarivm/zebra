@@ -1,0 +1,21 @@
+version: "3.6"
+
+services:
+  php_fpm:
+      build: .
+      container_name: sdb_php_fpm
+      working_dir: /secure-database
+      volumes:
+          - .:/secure-database
+          - ./docker/php/php.ini:/usr/local/etc/php/php.ini
+
+  mysql:
+      image: mysql:8.0
+      container_name: sdb_mysql
+      volumes:
+          - ./docker/mysql/mysqld.cnf:/etc/mysql/mysql.conf.d/mysqld.cnf
+      ports:
+          - "3306:3306"
+      environment:
+          - MYSQL_DATABASE=${DB_DATABASE}
+          - MYSQL_ROOT_PASSWORD=${DB_PASSWORD}

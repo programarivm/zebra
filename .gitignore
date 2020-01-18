@@ -8,3 +8,9 @@
 /var/
 /vendor/
 ###< symfony/framework-bundle ###
+
+/.env
+/docker/nginx/ssl/*.pem
+/docker/nginx/ssl/*.csr
+/docker/nginx/ssl/*.crt
+/docker/nginx/ssl/*.key
