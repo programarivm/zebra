@@ -4,9 +4,9 @@ services:
   php_fpm:
       build: .
       container_name: cheetah_php_fpm
-      working_dir: /secure-database
+      working_dir: /cheetah
       volumes:
-          - .:/secure-database
+          - .:/cheetah
           - ./docker/php/php.ini:/usr/local/etc/php/php.ini
 
   mysql:

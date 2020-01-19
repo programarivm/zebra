@@ -21,7 +21,7 @@ Design methodology that consists in seeding a development database with sample f
 Would you help make this app better?
 
 - Feel free to send a pull request
-- Drop an email at info@programarivm.com with the subject "Secure Database"
+- Drop an email at info@programarivm.com with the subject "Cheetah"
 - Leave me a comment on [Twitter](https://twitter.com/programarivm)
 
 Thank you.
