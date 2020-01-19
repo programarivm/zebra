@@ -1,18 +1,16 @@
 # Cheetah
 
-Database design methodology that consists in seeding a development database with sample fake data while designing it at the same time.
+Design methodology that consists in seeding a development database with sample fake data while designing it at the same time.
 
 ---
 
 ### Set up the Environment
 
-Create an `.env` file:
-
-    cp .env.example .env
-
-Bootstrap the development environment:
-
     bash/dev/start.sh
+
+### Load the Fixtures
+
+    docker exec -itu 1000:1000 cheetah_php_fpm php bin/console doctrine:fixtures:load
 
 ### To Do
 
