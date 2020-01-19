@@ -1,6 +1,6 @@
 # Cheetah
 
-This is a design methodology that helps you build a secure database from minute one; it consists in seeding the dev database with sample fake data while designing it at the same time.
+Database design methodology that consists in seeding a development database with sample fake data while designing it at the same time.
 
 ---
 

@@ -3,7 +3,7 @@ version: "3.6"
 services:
   php_fpm:
       build: .
-      container_name: sdb_php_fpm
+      container_name: cheetah_php_fpm
       working_dir: /secure-database
       volumes:
           - .:/secure-database
@@ -11,7 +11,7 @@ services:
 
   mysql:
       image: mysql:8.0
-      container_name: sdb_mysql
+      container_name: cheetah_mysql
       volumes:
           - ./docker/mysql/mysqld.cnf:/etc/mysql/mysql.conf.d/mysqld.cnf
       ports:
