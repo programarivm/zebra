@@ -21,8 +21,8 @@ docker-compose up -d
 # update the DATABASE_URL variable in the .env file
 DB_DATABASE="$(cat .env | grep DB_DATABASE | cut -b 13-)"
 DB_PASSWORD="$(cat .env | grep DB_PASSWORD | cut -b 13-)"
-GATEWAY="$(docker inspect -f '{{range .NetworkSettings.Networks}}{{.Gateway}}{{end}}' okapi_mysql)"
+GATEWAY="$(docker inspect -f '{{range .NetworkSettings.Networks}}{{.Gateway}}{{end}}' zebra_mysql)"
 sed -i "s/DATABASE_URL=.*/DATABASE_URL=mysql:\/\/root:${DB_PASSWORD}@${GATEWAY}:3306\/${DB_DATABASE}/g" .env
 
 # install dependencies
-docker exec -itu 1000:1000 okapi_php_fpm composer install
+docker exec -itu 1000:1000 zebra_php_fpm composer install

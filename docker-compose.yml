@@ -3,15 +3,15 @@ version: "3.6"
 services:
   php_fpm:
       build: .
-      container_name: okapi_php_fpm
-      working_dir: /okapi
+      container_name: zebra_php_fpm
+      working_dir: /zebra
       volumes:
-          - .:/okapi
+          - .:/zebra
           - ./docker/php/php.ini:/usr/local/etc/php/php.ini
 
   mysql:
       image: mysql:8.0
-      container_name: okapi_mysql
+      container_name: zebra_mysql
       volumes:
           - ./docker/mysql/conf.d/mysql.cnf:/etc/mysql/conf.d/mysql.cnf
       ports:
