@@ -2,11 +2,11 @@
 
 namespace App\DataFixtures;
 
-use App\Entity\Product;
+use App\Entity\User;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Common\Persistence\ObjectManager;
 
-class UserFixture extends Fixture
+class UserFixtures extends Fixture
 {
     public function load(ObjectManager $manager)
     {
