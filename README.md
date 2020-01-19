@@ -1,4 +1,4 @@
-# Cheetah
+# Okapi
 
 Design methodology that consists in seeding a development database with sample fake data while designing it at the same time.
 
@@ -10,12 +10,12 @@ Design methodology that consists in seeding a development database with sample f
 
 ### Update the Database Schema
 
-    docker exec -itu 1000:1000 cheetah_php_fpm php bin/console doctrine:migrations:diff
-    docker exec -itu 1000:1000 cheetah_php_fpm php bin/console doctrine:migrations:migrate
+    docker exec -itu 1000:1000 okapi_php_fpm php bin/console doctrine:migrations:diff
+    docker exec -itu 1000:1000 okapi_php_fpm php bin/console doctrine:migrations:migrate
 
 ### Load the Fixtures
 
-    docker exec -itu 1000:1000 cheetah_php_fpm php bin/console doctrine:fixtures:load
+    docker exec -itu 1000:1000 okapi_php_fpm php bin/console doctrine:fixtures:load
 
 ### To Do
 
@@ -26,7 +26,7 @@ Design methodology that consists in seeding a development database with sample f
 Would you help make this app better?
 
 - Feel free to send a pull request
-- Drop an email at info@programarivm.com with the subject "Cheetah"
+- Drop an email at info@programarivm.com with the subject "Okapi"
 - Leave me a comment on [Twitter](https://twitter.com/programarivm)
 
 Thank you.
