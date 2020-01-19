@@ -13,7 +13,7 @@ services:
       image: mysql:8.0
       container_name: cheetah_mysql
       volumes:
-          - ./docker/mysql/mysqld.cnf:/etc/mysql/mysql.conf.d/mysqld.cnf
+          - ./docker/mysql/conf.d/mysql.cnf:/etc/mysql/conf.d/mysql.cnf
       ports:
           - "3306:3306"
       environment:
