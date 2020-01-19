@@ -10,7 +10,7 @@ Design methodology that consists in seeding a development database with sample f
 
 ### Update the Database Schema
 
-    docker exec -itu 1000:1000 cheetah_php_fpm php bin/console doctrine migrations:diff
+    docker exec -itu 1000:1000 cheetah_php_fpm php bin/console doctrine:migrations:diff
     docker exec -itu 1000:1000 cheetah_php_fpm php bin/console doctrine:migrations:migrate
 
 ### Load the Fixtures

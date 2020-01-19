@@ -11,7 +11,8 @@ class UserFixtures extends Fixture
     public function load(ObjectManager $manager)
     {
         $user = new User();
-        $user->setUsername('bob');
+        $user->setUsername('bob')
+            ->setEmail('bob@gmail.com');
         $manager->persist($user);
 
         $manager->flush();
