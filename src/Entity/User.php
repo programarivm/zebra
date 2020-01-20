@@ -2,6 +2,8 @@
 
 namespace App\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
 
@@ -31,6 +33,16 @@ class User implements UserInterface
      * @ORM\Column(type="string", length=255)
      */
     private $password;
+
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\Address", mappedBy="user")
+     */
+    private $addresses;
+
+    public function __construct()
+    {
+        $this->addresses = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -92,5 +104,13 @@ class User implements UserInterface
         // TODO: implement UserInterface
 
         return;
+    }
+
+    /**
+     * @return Collection|Address[]
+     */
+    public function getAddresses(): Collection
+    {
+        return $this->addresses;
     }
 }

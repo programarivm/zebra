@@ -4,11 +4,14 @@ namespace App\DataFixtures;
 
 use App\Entity\Address;
 use Doctrine\Bundle\FixturesBundle\Fixture;
+use Doctrine\Common\DataFixtures\DependentFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
 use Faker\Factory;
 
-class AddressFixtures extends Fixture
+class AddressFixtures extends Fixture implements DependentFixtureInterface
 {
+    const N = 50;
+
     private $faker;
 
     public function __construct()
@@ -19,14 +22,22 @@ class AddressFixtures extends Fixture
 
     public function load(ObjectManager $manager)
     {
-        for ($i = 0; $i < 50; $i++) {
+        for ($i = 0; $i < self::N; $i++) {
             $address = (new Address())
                         ->setAddress($this->faker->address)
                         ->setPostcode($this->faker->postcode)
-                        ->setCity($this->faker->city);
+                        ->setCity($this->faker->city)
+                        ->setUser($this->getReference('user-'.rand(0,UserFixtures::N-1)));
             $manager->persist($address);
         }
 
         $manager->flush();
+    }
+
+    public function getDependencies()
+    {
+        return [
+            UserFixtures::class,
+        ];
     }
 }

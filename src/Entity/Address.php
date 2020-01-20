@@ -27,6 +27,11 @@ class Address
     private $postcode;
 
     /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\User", inversedBy="addresses")
+     */
+    private $user;
+
+    /**
      * @ORM\Column(type="string", length=255)
      */
     private $city;
@@ -68,6 +73,18 @@ class Address
     public function setCity(string $city): self
     {
         $this->city = $city;
+
+        return $this;
+    }
+
+    public function getUser(): ?User
+    {
+        return $this->user;
+    }
+
+    public function setUser(?User $user): self
+    {
+        $this->user = $user;
 
         return $this;
     }

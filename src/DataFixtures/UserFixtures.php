@@ -10,6 +10,8 @@ use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 
 class UserFixtures extends Fixture
 {
+    const N = 20;
+
     private $encoder;
 
     private $faker;
@@ -23,7 +25,7 @@ class UserFixtures extends Fixture
 
     public function load(ObjectManager $manager)
     {
-        for ($i = 0; $i < 20; $i++) {
+        for ($i = 0; $i < self::N; $i++) {
             $user = new User();
             $user->setUsername($this->faker->username)
                 ->setEmail($this->faker->email)
@@ -32,6 +34,7 @@ class UserFixtures extends Fixture
                     $this->faker->password
                 ));
             $manager->persist($user);
+            $this->addReference("user-$i", $user);
         }
 
         $manager->flush();
