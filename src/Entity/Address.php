@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use App\Entity\Behaviour\VerbosityTrait;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -9,6 +10,8 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Address
 {
+    use VerbosityTrait;
+
     /**
      * @ORM\Id()
      * @ORM\GeneratedValue()

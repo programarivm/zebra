@@ -23,11 +23,12 @@ class AddressFixtures extends Fixture implements DependentFixtureInterface
     public function load(ObjectManager $manager)
     {
         for ($i = 0; $i < self::N; $i++) {
-            $address = (new Address())
-                        ->setAddress($this->faker->address)
-                        ->setPostcode($this->faker->postcode)
-                        ->setCity($this->faker->city)
-                        ->setUser($this->getReference('user-'.rand(0,UserFixtures::N-1)));
+            $address = (new Address())->setProps([
+                'address' => $this->faker->address,
+                'postcode' => $this->faker->postcode,
+                'city' => $this->faker->city,
+                'user' => $this->getReference('user-'.rand(0,UserFixtures::N-1)),
+            ]);
             $manager->persist($address);
         }
 

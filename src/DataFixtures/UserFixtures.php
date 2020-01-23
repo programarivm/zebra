@@ -27,12 +27,11 @@ class UserFixtures extends Fixture
     {
         for ($i = 0; $i < self::N; $i++) {
             $user = new User();
-            $user->setUsername($this->faker->username)
-                ->setEmail($this->faker->email)
-                ->setPassword($this->encoder->encodePassword(
-                    $user,
-                    $this->faker->password
-                ));
+            $user->setProps([
+                'username' => $this->faker->username,
+                'email' => $this->faker->email,
+                'password' => $this->encoder->encodePassword($user, $this->faker->password),
+            ]);
             $manager->persist($user);
             $this->addReference("user-$i", $user);
         }
