@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use App\Entity\Behaviour\ValidationTrait;
 use App\Entity\Behaviour\VerbosityTrait;
 use Doctrine\ORM\Mapping as ORM;
 
@@ -10,6 +11,7 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Address
 {
+    use ValidationTrait;
     use VerbosityTrait;
 
     /**

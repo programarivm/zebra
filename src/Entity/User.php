@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use App\Entity\Behaviour\ValidationTrait;
 use App\Entity\Behaviour\VerbosityTrait;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
@@ -13,8 +14,9 @@ use Symfony\Component\Security\Core\User\UserInterface;
  */
 class User implements UserInterface
 {
+    use ValidationTrait;
     use VerbosityTrait;
-    
+
     /**
      * @ORM\Id()
      * @ORM\GeneratedValue()
