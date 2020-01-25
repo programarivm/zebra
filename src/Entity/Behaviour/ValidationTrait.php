@@ -2,17 +2,15 @@
 
 namespace App\Entity\Behaviour;
 
-use Symfony\Component\Validator\Validation;
-
 trait ValidationTrait
 {
     /**
-     * Validates an entity with the rules definied in validation.yml
+     * Validates an entity with the rules definied in config/validator/validation.yml
      *
-     * @param   Symfony\Component\Validator\Validation $service
-     * @return  null|array An array of error messages, otherwise null.
+     * @param $service
+     * @return null|array An array of error messages, otherwise null.
      */
-    public function validate(Validation $service)
+    public function validate($service)
     {
         $messages = [];
         $errors = $service->validate($this);

@@ -17,6 +17,10 @@ Design methodology that consists in seeding a development database with sample f
 
     docker exec -itu 1000:1000 zebra_php_fpm php bin/console doctrine:fixtures:load
 
+### Run the Tests
+
+    docker exec -itu 1000:1000 zebra_php_fpm php bin/phpunit
+
 ### Contributions
 
 Would you help make this app better?

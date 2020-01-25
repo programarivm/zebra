@@ -1,0 +1,4 @@
+App\Entity\Address:
+    properties:
+        postcode:
+            - NotBlank: ~

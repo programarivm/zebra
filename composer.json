@@ -19,7 +19,8 @@
     },
     "require-dev": {
         "doctrine/doctrine-fixtures-bundle": "^3.3",
-        "fzaninotto/faker": "^1.9"
+        "fzaninotto/faker": "^1.9",
+        "symfony/phpunit-bridge": "^5.0"
     },
     "config": {
         "preferred-install": {
