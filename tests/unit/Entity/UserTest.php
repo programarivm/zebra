@@ -3,20 +3,10 @@
 namespace App\Tests\Unit\Entity;
 
 use App\Entity\User;
-use PHPUnit\Framework\TestCase;
-use Symfony\Component\Validator\Validation;
+use App\Tests\Unit\Entity\ValidationTestCase;
 
-class UserTest extends TestCase
+class UserTest extends ValidationTestCase
 {
-    protected static $validator;
-
-    public static function setUpBeforeClass()
-    {
-        self::$validator = Validation::createValidatorBuilder()
-                                ->addYamlMapping('config/validator/validation.yaml')
-                                ->getValidator();
-    }
-
     /**
      * @test
      */

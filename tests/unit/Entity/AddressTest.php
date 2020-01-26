@@ -3,21 +3,16 @@
 namespace App\Tests\Unit\Entity;
 
 use App\Entity\Address;
-use PHPUnit\Framework\TestCase;
-use Symfony\Component\Validator\Validation;
+use App\Tests\Unit\Entity\ValidationTestCase;
 
-class AddressTest extends TestCase
+class AddressTest extends ValidationTestCase
 {
     /**
      * @test
      */
     public function validate_falsy()
     {
-        $validator = Validation::createValidatorBuilder()
-                        ->addYamlMapping('config/validator/validation.yaml')
-                        ->getValidator();
-
-        $errors = (new Address())->validate($validator);
+        $errors = (new Address())->validate(self::$validator);
 
         $expected = [
             "The address cannot be empty.",
