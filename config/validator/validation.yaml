@@ -3,11 +3,11 @@ App\Entity\Address:
         address:
             - NotBlank: { message: "The address cannot be empty." }
         postcode:
-            - NotBlank: { message: "The address postcode cannot be empty." }
+            - NotBlank: { message: "The address's postcode cannot be empty." }
         city:
-            - NotBlank: { message: "The address city cannot be empty." }
+            - NotBlank: { message: "The address's city cannot be empty." }
         user:
-            - NotBlank: { message: "The address user cannot be empty." }
+            - NotBlank: { message: "The address's user cannot be empty." }
 
 App\Entity\User:
     properties:
