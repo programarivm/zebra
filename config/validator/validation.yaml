@@ -8,3 +8,12 @@ App\Entity\Address:
             - NotBlank: { message: "The address city cannot be empty." }
         user:
             - NotBlank: { message: "The address user cannot be empty." }
+
+App\Entity\User:
+    properties:
+        username:
+            - NotBlank: { message: "The user's username cannot be empty." }
+        email:
+            - NotBlank: { message: "The user's email cannot be empty." }
+        password:
+            - NotBlank: { message: "The user's password cannot be empty." }
