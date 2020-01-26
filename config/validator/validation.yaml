@@ -12,8 +12,10 @@ App\Entity\Address:
 App\Entity\User:
     properties:
         username:
-            - NotBlank: { message: "The user's username cannot be empty." }
+            - NotBlank:
+                message: "The user's username cannot be empty."
         email:
-            - NotBlank: { message: "The user's email cannot be empty." }
-        password:
-            - NotBlank: { message: "The user's password cannot be empty." }
+            - NotBlank:
+                message: "The user's email cannot be empty."
+            - Email:
+                message: "The user's email is not a valid one."
