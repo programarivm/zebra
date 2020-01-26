@@ -23,6 +23,7 @@ class AddressTest extends TestCase
             'The address cannot be empty.',
             'The address postcode cannot be empty.',
             'The address city cannot be empty.',
+            'The address user cannot be empty.',
         ];
 
         $this->assertEquals($expected, $errors);

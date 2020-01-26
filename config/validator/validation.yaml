@@ -6,3 +6,5 @@ App\Entity\Address:
             - NotBlank: { message: "The address postcode cannot be empty." }
         city:
             - NotBlank: { message: "The address city cannot be empty." }
+        user:
+            - NotBlank: { message: "The address user cannot be empty." }
