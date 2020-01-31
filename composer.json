@@ -30,7 +30,8 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\": "src/"
+            "App\\": "src/",
+            "Programarivm\\EasyAclBundle\\": "lib/EasyAclBundle/src/"
         }
     },
     "autoload-dev": {
