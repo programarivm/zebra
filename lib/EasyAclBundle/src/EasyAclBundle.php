@@ -2,7 +2,7 @@
 
 namespace Programarivm\EasyAclBundle;
 
-class Acl
+class EasyAclBundle extends Bundle
 {
     // TODO:
     public function foo()
