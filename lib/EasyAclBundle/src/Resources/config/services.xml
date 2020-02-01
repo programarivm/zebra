@@ -5,6 +5,7 @@
         http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-        <service id="Programarivm\EasyAclBundle\EasyAclBundle" />
+        <service id="programarivm_easy_acl.easy_acl" class="Programarivm\EasyAclBundle\EasyAclBundle" public="true" />
+        <service id="Programarivm\EasyAclBundle\EasyAclBundle" alias="programarivm_easy_acl.easy_acl" public="false" />
     </services>
 </container>
