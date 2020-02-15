@@ -20,8 +20,15 @@
     "require-dev": {
         "doctrine/doctrine-fixtures-bundle": "^3.3",
         "fzaninotto/faker": "^1.9",
-        "symfony/phpunit-bridge": "^5.0"
+        "symfony/phpunit-bridge": "^5.0",
+        "programarivm/easy-acl-bundle": "*@dev"
     },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../easy-acl-bundle"
+        }
+    ],
     "config": {
         "preferred-install": {
             "*": "dist"
