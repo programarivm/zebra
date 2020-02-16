@@ -25,4 +25,4 @@ GATEWAY="$(docker inspect -f '{{range .NetworkSettings.Networks}}{{.Gateway}}{{e
 sed -i "s/DATABASE_URL=.*/DATABASE_URL=mysql:\/\/root:${DB_PASSWORD}@${GATEWAY}:3306\/${DB_DATABASE}/g" .env
 
 # install dependencies
-docker exec -itu 1000:1000 zebra_php_fpm composer install
+docker exec -it zebra_php_fpm composer install
