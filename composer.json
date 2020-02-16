@@ -21,8 +21,19 @@
         "doctrine/doctrine-fixtures-bundle": "^3.3",
         "fzaninotto/faker": "^1.9",
         "symfony/phpunit-bridge": "^5.0",
-        "programarivm/easy-acl-bundle": "^0.9"
+        "programarivm/lorem-ipsum-bundle": "dev-feature/symfony5",
+        "programarivm/easy-acl-bundle": "dev-master"
     },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/programarivm/lorem-ipsum-bundle.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/programarivm/easy-acl-bundle.git"
+        }
+    ],
     "config": {
         "preferred-install": {
             "*": "dist"
