@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3d3f8657ecd0ea7fca3f92477fae8eeb",
+    "content-hash": "8f724f7e9d74f11fd9b898066f5fd5ff",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -4448,22 +4448,22 @@
         },
         {
             "name": "programarivm/lorem-ipsum-bundle",
-            "version": "dev-feature/symfony5",
+            "version": "dev-feature/symfony5-update",
             "source": {
                 "type": "git",
                 "url": "https://github.com/programarivm/lorem-ipsum-bundle.git",
-                "reference": "4a4e971036af4c56c5f6c8a2b93f994d3fc90b5e"
+                "reference": "f9706c899076172ba45190e230909c3048c02c16"
             },
             "require": {
                 "php": "^7.1.3",
-                "symfony/config": "^3.4 || ^4.0 || ^5.0",
-                "symfony/dependency-injection": "^3.4 || ^4.0 || ^5.0",
-                "symfony/http-kernel": "^3.4 || ^4.0 || ^5.0"
+                "symfony/config": "^5.0",
+                "symfony/dependency-injection": "^5.0",
+                "symfony/http-kernel": "^5.0"
             },
             "require-dev": {
-                "symfony/browser-kit": "^3.4 || ^4.0 || ^5.0",
-                "symfony/framework-bundle": "^3.4 || ^4.0 || ^5.0",
-                "symfony/phpunit-bridge": "^3.4 || ^4.0 || ^5.0"
+                "symfony/browser-kit": "^5.0",
+                "symfony/framework-bundle": "^5.0",
+                "symfony/phpunit-bridge": "^5.0"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -4486,7 +4486,7 @@
                 }
             ],
             "description": "Happy lorem ipsum",
-            "time": "2020-02-16T11:41:06+00:00"
+            "time": "2020-02-22T11:44:23+00:00"
         },
         {
             "name": "symfony/phpunit-bridge",

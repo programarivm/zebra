@@ -21,7 +21,7 @@
         "doctrine/doctrine-fixtures-bundle": "^3.3",
         "fzaninotto/faker": "^1.9",
         "symfony/phpunit-bridge": "^5.0",
-        "programarivm/lorem-ipsum-bundle": "dev-feature/symfony5",
+        "programarivm/lorem-ipsum-bundle": "dev-feature/symfony5-update",
         "programarivm/easy-acl-bundle": "dev-master"
     },
     "repositories": [
