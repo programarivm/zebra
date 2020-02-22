@@ -4410,39 +4410,10 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/programarivm/easy-acl-bundle.git",
-                "reference": "e4e35938dc3e22c1ab0220d20cff0fad1b8360d3"
+                "reference": "ad269628777e0e196d30430214931eff4ae9bf76"
             },
             "require": {
-                "php": ">=7.1"
-            },
-            "type": "symfony-bundle",
-            "autoload": {
-                "psr-4": {
-                    "Programarivm\\EasyAclBundle\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "programarivm",
-                    "email": "info@programarivm.com"
-                }
-            ],
-            "description": "Easy access control list (ACL)",
-            "time": "2020-02-15T14:31:47+00:00"
-        },
-        {
-            "name": "programarivm/lorem-ipsum-bundle",
-            "version": "dev-feature/symfony5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/programarivm/lorem-ipsum-bundle.git",
-                "reference": "a41630ea5d6b099f92fb59e37e5c72f733b02c5f"
-            },
-            "require": {
-                "php": "^7.1.3",
+                "php": ">=7.1",
                 "symfony/config": "^5.0",
                 "symfony/dependency-injection": "^5.0",
                 "symfony/http-kernel": "^5.0"
@@ -4451,6 +4422,48 @@
                 "symfony/browser-kit": "^5.0",
                 "symfony/framework-bundle": "^5.0",
                 "symfony/phpunit-bridge": "^5.0"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Programarivm\\EasyAclBundle\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Programarivm\\EasyAclBundle\\Tests\\": "tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jordi Bassagañas",
+                    "email": "info@programarivm.com"
+                }
+            ],
+            "description": "Easy access control list (ACL) bundle",
+            "time": "2020-02-22T11:17:42+00:00"
+        },
+        {
+            "name": "programarivm/lorem-ipsum-bundle",
+            "version": "dev-feature/symfony5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/programarivm/lorem-ipsum-bundle.git",
+                "reference": "4a4e971036af4c56c5f6c8a2b93f994d3fc90b5e"
+            },
+            "require": {
+                "php": "^7.1.3",
+                "symfony/config": "^3.4 || ^4.0 || ^5.0",
+                "symfony/dependency-injection": "^3.4 || ^4.0 || ^5.0",
+                "symfony/http-kernel": "^3.4 || ^4.0 || ^5.0"
+            },
+            "require-dev": {
+                "symfony/browser-kit": "^3.4 || ^4.0 || ^5.0",
+                "symfony/framework-bundle": "^3.4 || ^4.0 || ^5.0",
+                "symfony/phpunit-bridge": "^3.4 || ^4.0 || ^5.0"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -4473,7 +4486,7 @@
                 }
             ],
             "description": "Happy lorem ipsum",
-            "time": "2020-02-16T09:18:13+00:00"
+            "time": "2020-02-16T11:41:06+00:00"
         },
         {
             "name": "symfony/phpunit-bridge",

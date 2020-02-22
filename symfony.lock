@@ -96,6 +96,12 @@
     "jdorn/sql-formatter": {
         "version": "v1.2.17"
     },
+    "laminas/laminas-code": {
+        "version": "3.4.1"
+    },
+    "laminas/laminas-eventmanager": {
+        "version": "3.2.1"
+    },
     "laminas/laminas-zendframework-bridge": {
         "version": "1.0.1"
     },
@@ -110,6 +116,12 @@
     },
     "php": {
         "version": "7.4"
+    },
+    "programarivm/easy-acl-bundle": {
+        "version": "dev-master"
+    },
+    "programarivm/lorem-ipsum-bundle": {
+        "version": "dev-feature/symfony5"
     },
     "psr/cache": {
         "version": "1.0.1"
@@ -296,6 +308,22 @@
     },
     "symfony/stopwatch": {
         "version": "v5.0.2"
+    },
+    "symfony/translation-contracts": {
+        "version": "v2.0.1"
+    },
+    "symfony/validator": {
+        "version": "4.3",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "4.3",
+            "ref": "d902da3e4952f18d3bf05aab29512eb61cabd869"
+        },
+        "files": [
+            "config/packages/test/validator.yaml",
+            "config/packages/validator.yaml"
+        ]
     },
     "symfony/var-dumper": {
         "version": "v5.0.2"
