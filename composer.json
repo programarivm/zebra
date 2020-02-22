@@ -15,14 +15,14 @@
         "symfony/security-bundle": "5.0.*",
         "symfony/security-core": "5.0.*",
         "symfony/validator": "5.0.*",
-        "symfony/yaml": "5.0.*"
+        "symfony/yaml": "5.0.*",
+        "programarivm/lorem-ipsum-bundle": "dev-feature/symfony5-update",
+        "programarivm/easy-acl-bundle": "dev-master"
     },
     "require-dev": {
         "doctrine/doctrine-fixtures-bundle": "^3.3",
         "fzaninotto/faker": "^1.9",
-        "symfony/phpunit-bridge": "^5.0",
-        "programarivm/lorem-ipsum-bundle": "dev-feature/symfony5-update",
-        "programarivm/easy-acl-bundle": "dev-master"
+        "symfony/phpunit-bridge": "^5.0"
     },
     "repositories": [
         {
@@ -35,7 +35,10 @@
         }
     ],
     "config": {
+        "cache-files-ttl":0,
         "preferred-install": {
+            "programarivm/lorem-ipsum-bundle": "source",
+            "programarivm/easy-acl-bundle": "source",
             "*": "dist"
         },
         "sort-packages": true
