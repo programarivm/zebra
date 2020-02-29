@@ -16,7 +16,6 @@
         "symfony/security-core": "5.0.*",
         "symfony/validator": "5.0.*",
         "symfony/yaml": "5.0.*",
-        "programarivm/lorem-ipsum-bundle": "dev-feature/symfony5-update",
         "programarivm/easy-acl-bundle": "dev-master",
         "programarivm/hello-world-bundle": "dev-master"
     },
@@ -30,10 +29,6 @@
     "repositories": [
         {
             "type": "git",
-            "url": "https://github.com/programarivm/lorem-ipsum-bundle.git"
-        },
-        {
-            "type": "git",
             "url": "https://github.com/programarivm/easy-acl-bundle.git"
         },
         {
@@ -44,7 +39,6 @@
     "config": {
         "cache-files-ttl":0,
         "preferred-install": {
-            "programarivm/lorem-ipsum-bundle": "source",
             "programarivm/easy-acl-bundle": "source",
             "programarivm/hello-world-bundle": "source",
             "*": "dist"
