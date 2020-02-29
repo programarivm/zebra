@@ -1,6 +1,6 @@
 # Zebra
 
-Design methodology that consists in seeding a development database with sample fake data while designing it at the same time. Also this application behaves as a host in order to develop and test custom Symfony bundles.
+Design methodology that consists in seeding a development database with sample fake data while designing it at the same time. Also this application behaves as a host in order to develop and test Symfony 5 bundles.
 
 ---
 
@@ -20,6 +20,12 @@ Design methodology that consists in seeding a development database with sample f
 ### Run the Tests
 
     docker exec -itu 1000:1000 zebra_php_fpm php bin/phpunit
+
+### Run Bundle Tests
+
+Example:
+
+    docker exec -it zebra_php_fpm php bin/phpunit vendor/programarivm/hello-world-bundle
 
 ### Contributions
 
