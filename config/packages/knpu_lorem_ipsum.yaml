@@ -1,8 +1,0 @@
-# config/packages/knpu_lorem_ipsum.yaml
-knpu_lorem_ipsum:
-
-    # Whether or not you believe in unicorns
-    unicorns_are_real:    true
-
-    # How much do you like sunshine?
-    min_sunshine:         3
