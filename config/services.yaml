@@ -28,3 +28,6 @@ services:
 
     Programarivm\EasyAclBundle\Command\GreetCommand:
         tags: ['console.command']
+
+    Programarivm\HelloWorldBundle\Command\GreetCommand:
+        tags: ['console.command']
