@@ -120,6 +120,9 @@
     "programarivm/easy-acl-bundle": {
         "version": "dev-master"
     },
+    "programarivm/hello-world-bundle": {
+        "version": "dev-master"
+    },
     "programarivm/lorem-ipsum-bundle": {
         "version": "dev-feature/symfony5"
     },

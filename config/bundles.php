@@ -8,4 +8,5 @@ return [
     Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle::class => ['all' => true],
     Symfony\Bundle\SecurityBundle\SecurityBundle::class => ['all' => true],
     Programarivm\EasyAclBundle\EasyAclBundle::class => ['dev' => true, 'test' => true],
+    Programarivm\HelloWorldBundle\HelloWorldBundle::class => ['all' => true],
 ];
