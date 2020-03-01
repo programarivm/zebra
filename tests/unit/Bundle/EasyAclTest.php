@@ -15,16 +15,16 @@ class EasyAclTest extends WebTestCase
 
         self::$container = $kernel->getContainer();
 
-        self::$easyAcl = self::$container->get('programarivm_easy_acl.lorem_ipsum');
+        self::$easyAcl = self::$container->get('programarivm.easy_acl');
     }
 
     /**
      * @test
      */
-    public function one_word()
+    public function signal()
     {
-        $word = self::$easyAcl->getWords(1);
+        $expected = 'Hello world! Name: 51 Pegasi c. Exoplanet: true. Satellites: 10.';
 
-        $this->assertIsString($word);
+        $this->assertEquals($expected, self::$easyAcl->signal());
     }
 }

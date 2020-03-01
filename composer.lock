@@ -1554,13 +1554,10 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/programarivm/doctrine-behavior-bundle.git",
-                "reference": "9b0b046347f4615b83c41b10fb1a3e611d8d2c56"
+                "reference": "5ce8730fb01b18885b16cda9bd2b15674db2954c"
             },
             "require": {
-                "php": ">=7.1",
-                "symfony/config": "^5.0",
-                "symfony/dependency-injection": "^5.0",
-                "symfony/http-kernel": "^5.0"
+                "php": ">=7.1"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -1578,7 +1575,7 @@
                 }
             ],
             "description": "This is a collection of Doctrine behaviors.",
-            "time": "2020-03-01T09:01:20+00:00"
+            "time": "2020-03-01T09:26:48+00:00"
         },
         {
             "name": "programarivm/easy-acl-bundle",
@@ -1586,7 +1583,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/programarivm/easy-acl-bundle.git",
-                "reference": "a40e5ac21cd0dca2262259ecaf273b915bb0f5a2"
+                "reference": "8ccfe15ef84a2d23a6e862888ab365b23783fe8a"
             },
             "require": {
                 "php": ">=7.1",
@@ -1610,7 +1607,7 @@
                 }
             ],
             "description": "Easy access control list (ACL) bundle",
-            "time": "2020-02-29T22:25:30+00:00"
+            "time": "2020-03-01T20:36:24+00:00"
         },
         {
             "name": "programarivm/hello-world-bundle",
