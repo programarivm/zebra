@@ -17,7 +17,8 @@
         "symfony/validator": "5.0.*",
         "symfony/yaml": "5.0.*",
         "programarivm/easy-acl-bundle": "dev-master",
-        "programarivm/hello-world-bundle": "dev-master"
+        "programarivm/hello-world-bundle": "dev-master",
+        "programarivm/doctrine-behavior-bundle": "dev-master"
     },
     "require-dev": {
         "doctrine/doctrine-fixtures-bundle": "^3.3",
@@ -34,6 +35,10 @@
         {
             "type": "git",
             "url": "https://github.com/programarivm/hello-world-bundle.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/programarivm/doctrine-behavior-bundle.git"
         }
     ],
     "config": {
@@ -41,6 +46,7 @@
         "preferred-install": {
             "programarivm/easy-acl-bundle": "source",
             "programarivm/hello-world-bundle": "source",
+            "programarivm/doctrine-behavior-bundle": "source",
             "*": "dist"
         },
         "sort-packages": true
