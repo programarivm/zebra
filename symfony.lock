@@ -117,6 +117,9 @@
     "php": {
         "version": "7.4"
     },
+    "programarivm/doctrine-behavior-bundle": {
+        "version": "dev-master"
+    },
     "programarivm/easy-acl-bundle": {
         "version": "dev-master"
     },

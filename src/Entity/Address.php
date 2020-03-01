@@ -2,9 +2,9 @@
 
 namespace App\Entity;
 
-use App\Entity\Behaviour\ValidationTrait;
-use App\Entity\Behaviour\VerbosityTrait;
 use Doctrine\ORM\Mapping as ORM;
+use Programarivm\DoctrineBehaviorBundle\Entity\ValidationTrait;
+use Programarivm\DoctrineBehaviorBundle\Entity\VerbosityTrait;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\AddressRepository")

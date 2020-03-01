@@ -2,11 +2,11 @@
 
 namespace App\Entity;
 
-use App\Entity\Behaviour\ValidationTrait;
-use App\Entity\Behaviour\VerbosityTrait;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Programarivm\DoctrineBehaviorBundle\Entity\ValidationTrait;
+use Programarivm\DoctrineBehaviorBundle\Entity\VerbosityTrait;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
