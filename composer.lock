@@ -1583,7 +1583,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/programarivm/easy-acl-bundle.git",
-                "reference": "cb331c898eeaef251082d992941cb2a2060e7123"
+                "reference": "f54ffa45491529c6ed130de6c64ed0e18b1d2a66"
             },
             "require": {
                 "php": ">=7.1",
@@ -1607,7 +1607,7 @@
                 }
             ],
             "description": "Easy access control list (ACL) bundle",
-            "time": "2020-03-07T11:12:54+00:00"
+            "time": "2020-03-07T11:50:24+00:00"
         },
         {
             "name": "programarivm/hello-world-bundle",
