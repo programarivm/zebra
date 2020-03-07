@@ -27,6 +27,8 @@ services:
     # please note that last definitions always *replace* previous ones
 
     Programarivm\EasyAclBundle\Command\SetupCommand:
+        arguments:
+            $path: '%kernel.project_dir%'
         tags: ['console.command']
 
     Programarivm\HelloWorldBundle\Command\GreetCommand:
