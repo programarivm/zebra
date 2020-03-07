@@ -30,6 +30,3 @@ services:
         arguments:
             $projectDir: '%kernel.project_dir%'
         tags: ['console.command']
-
-    Programarivm\HelloWorldBundle\Command\GreetCommand:
-        tags: ['console.command']
