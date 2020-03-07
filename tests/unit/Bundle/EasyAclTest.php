@@ -21,10 +21,23 @@ class EasyAclTest extends WebTestCase
     /**
      * @test
      */
-    public function signal()
+    public function roles()
     {
-        $expected = 'Hello world! Name: 51 Pegasi c. Exoplanet: true. Satellites: 10.';
+        $expected = [
+            [
+                'hierarchy' => 0,
+                'name' => 'Superadmin',
+            ],
+            [
+                'hierarchy' => 1,
+                'name' => 'Admin',
+            ],
+            [
+                'hierarchy' => 2,
+                'name' => 'Basic',
+            ],
+        ];
 
-        $this->assertEquals($expected, self::$easyAcl->signal());
+        $this->assertEquals($expected, self::$easyAcl->getRoles());
     }
 }
