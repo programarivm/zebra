@@ -1,4 +1,11 @@
 programarivm_easy_acl:
-    name: '51 Pegasi c'
-    is_exoplanet: true
-    satellites: 10
+  roles:
+    -
+      hierarchy: 0
+      name: Superadmin
+    -
+      hierarchy: 1
+      name: Admin
+    -
+      hierarchy: 2
+      name: Basic

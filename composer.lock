@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7b31bc45e93e0c4d2affd24d49ab53c9",
+    "content-hash": "d15c65f6dbc4c99ef36744925bd06a21",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1583,7 +1583,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/programarivm/easy-acl-bundle.git",
-                "reference": "8ccfe15ef84a2d23a6e862888ab365b23783fe8a"
+                "reference": "2352708ff9dc7dcb97c0463df48b0ca46584caa9"
             },
             "require": {
                 "php": ">=7.1",
@@ -1607,7 +1607,7 @@
                 }
             ],
             "description": "Easy access control list (ACL) bundle",
-            "time": "2020-03-01T20:36:24+00:00"
+            "time": "2020-03-02T20:23:26+00:00"
         },
         {
             "name": "programarivm/hello-world-bundle",
@@ -3004,16 +3004,16 @@
         },
         {
             "name": "symfony/maker-bundle",
-            "version": "v1.14.3",
+            "version": "v1.14.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/maker-bundle.git",
-                "reference": "c864e7f9b8d1e1f5f60acc3beda11299f637aded"
+                "reference": "b06ebe524357945a4e7ffee42ade880bdf9e1500"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/maker-bundle/zipball/c864e7f9b8d1e1f5f60acc3beda11299f637aded",
-                "reference": "c864e7f9b8d1e1f5f60acc3beda11299f637aded",
+                "url": "https://api.github.com/repos/symfony/maker-bundle/zipball/b06ebe524357945a4e7ffee42ade880bdf9e1500",
+                "reference": "b06ebe524357945a4e7ffee42ade880bdf9e1500",
                 "shasum": ""
             },
             "require": {
@@ -3068,7 +3068,7 @@
                 "scaffold",
                 "scaffolding"
             ],
-            "time": "2019-11-07T00:56:03+00:00"
+            "time": "2020-03-02T15:21:16+00:00"
         },
         {
             "name": "symfony/mime",
@@ -4740,9 +4740,9 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "programarivm/doctrine-behavior-bundle": 20,
         "programarivm/easy-acl-bundle": 20,
-        "programarivm/hello-world-bundle": 20,
-        "programarivm/doctrine-behavior-bundle": 20
+        "programarivm/hello-world-bundle": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
