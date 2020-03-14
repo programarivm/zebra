@@ -16,8 +16,20 @@
     </php>
 
     <testsuites>
-        <testsuite name="Project Test Suite">
+        <testsuite name="Zebra">
             <directory>tests</directory>
+        </testsuite>
+        <testsuite name="Programarivm\EasyAclBundle\Tests\Entity">
+            <directory>vendor/programarivm/easy-acl-bundle/tests/Entity</directory>
+        </testsuite>
+        <testsuite name="Programarivm\EasyAclBundle\Tests\DataFixtures">
+            <file>vendor/programarivm/easy-acl-bundle/tests/DataFixtures/RouteFixturesTest.php</file>
+            <file>vendor/programarivm/easy-acl-bundle/tests/DataFixtures/RoleFixturesTest.php</file>
+            <file>vendor/programarivm/easy-acl-bundle/tests/DataFixtures/PermissionFixturesTest.php</file>
+            <file>vendor/programarivm/easy-acl-bundle/tests/DataFixtures/IdentityFixturesTest.php</file>
+        </testsuite>
+        <testsuite name="Programarivm\EasyAclBundle\Tests\Repository">
+            <file>vendor/programarivm/easy-acl-bundle/tests/Repository/PermissionTest.php</file>
         </testsuite>
     </testsuites>
 

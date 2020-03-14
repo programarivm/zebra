@@ -21,12 +21,6 @@ Design methodology that consists in seeding a development database with sample f
 
     docker exec -itu 1000:1000 zebra_php_fpm php bin/phpunit
 
-### Run Bundle Tests
-
-Example:
-
-    docker exec -it zebra_php_fpm php bin/phpunit vendor/programarivm/hello-world-bundle
-
 ### Contributions
 
 Would you help make this app better?
