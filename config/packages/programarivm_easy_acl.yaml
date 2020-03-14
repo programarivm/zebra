@@ -1,5 +1,5 @@
 programarivm_easy_acl:
-  access:
+  permission:
     -
       role: Superadmin
       routes:
