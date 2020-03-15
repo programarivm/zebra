@@ -30,6 +30,7 @@
         </testsuite>
         <testsuite name="Programarivm\EasyAclBundle\Tests\Repository">
             <file>vendor/programarivm/easy-acl-bundle/tests/Repository/PermissionTest.php</file>
+            <file>vendor/programarivm/easy-acl-bundle/tests/Repository/IdentityTest.php</file>
         </testsuite>
     </testsuites>
 
