@@ -26,7 +26,25 @@ class UserFixtures extends Fixture implements FixtureGroupInterface
 
     public function load(ObjectManager $manager)
     {
-        for ($i = 0; $i < self::N; $i++) {
+        $alice = new User();
+        $alice->setProps([
+            'username' => 'alice',
+            'email' => $this->faker->email,
+            'password' => $this->encoder->encodePassword($alice, $this->faker->password),
+        ]);
+        $manager->persist($alice);
+        $this->addReference("user-0", $alice);
+
+        $bob = new User();
+        $bob->setProps([
+            'username' => 'bob',
+            'email' => $this->faker->email,
+            'password' => $this->encoder->encodePassword($bob, $this->faker->password),
+        ]);
+        $manager->persist($bob);
+        $this->addReference("user-1", $bob);
+
+        for ($i = 2; $i < self::N; $i++) {
             $user = new User();
             $user->setProps([
                 'username' => $this->faker->username,
