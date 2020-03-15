@@ -8,6 +8,7 @@ use Programarivm\DoctrineBehaviorBundle\Entity\VerbosityTrait;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\AddressRepository")
+ * @ORM\Table(name="address")
  */
 class Address
 {
