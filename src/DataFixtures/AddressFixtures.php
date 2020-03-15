@@ -4,11 +4,12 @@ namespace App\DataFixtures;
 
 use App\Entity\Address;
 use Doctrine\Bundle\FixturesBundle\Fixture;
+use Doctrine\Bundle\FixturesBundle\FixtureGroupInterface;
 use Doctrine\Common\DataFixtures\DependentFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
 use Faker\Factory;
 
-class AddressFixtures extends Fixture implements DependentFixtureInterface
+class AddressFixtures extends Fixture implements FixtureGroupInterface, DependentFixtureInterface
 {
     const N = 50;
 
@@ -33,6 +34,11 @@ class AddressFixtures extends Fixture implements DependentFixtureInterface
         }
 
         $manager->flush();
+    }
+
+    public static function getGroups(): array
+    {
+        return ['zebra'];
     }
 
     public function getDependencies()

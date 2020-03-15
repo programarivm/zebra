@@ -15,7 +15,7 @@ Design methodology that consists in seeding a development database with sample f
 
 ### Load the Fixtures
 
-    docker exec -itu 1000:1000 zebra_php_fpm php bin/console doctrine:fixtures:load
+    docker exec -itu 1000:1000 zebra_php_fpm php bin/console doctrine:fixtures:load --group=zebra
 
 ### Run the Tests
 
