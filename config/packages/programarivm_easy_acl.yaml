@@ -1,4 +1,5 @@
 programarivm_easy_acl:
+  target: App\Entity\User
   permission:
     -
       role: Superadmin

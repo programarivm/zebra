@@ -23,7 +23,7 @@ Alternatively:
 
 ### Run the Tests
 
-    docker exec -itu 1000:1000 zebra_php_fpm php bin/phpunit
+    docker exec -it zebra_php_fpm php bin/phpunit
 
 ### Contributions
 
