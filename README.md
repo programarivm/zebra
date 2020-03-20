@@ -13,6 +13,10 @@ Design methodology that consists in seeding a development database with sample f
     docker exec -itu 1000:1000 zebra_php_fpm php bin/console doctrine:migrations:diff
     docker exec -itu 1000:1000 zebra_php_fpm php bin/console doctrine:migrations:migrate
 
+Alternatively:
+
+    docker exec -itu 1000:1000 zebra_php_fpm php bin/console doctrine:schema:update --force
+
 ### Load the Fixtures
 
     docker exec -itu 1000:1000 zebra_php_fpm php bin/console doctrine:fixtures:load --group=zebra
