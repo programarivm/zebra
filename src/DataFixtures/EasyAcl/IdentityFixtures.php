@@ -38,7 +38,7 @@ class IdentityFixtures extends Fixture implements FixtureGroupInterface, Depende
     public static function getGroups(): array
     {
         return [
-            'zebra',
+            'easy-acl',
         ];
     }
 

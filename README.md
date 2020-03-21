@@ -19,7 +19,7 @@ Alternatively:
 
 ### Load the Fixtures
 
-    docker exec -itu 1000:1000 zebra_php_fpm php bin/console doctrine:fixtures:load --group=zebra
+    docker exec -itu 1000:1000 zebra_php_fpm php bin/console doctrine:fixtures:load --group=zebra --group=easy-acl
 
 ### Run the Tests
 

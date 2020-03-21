@@ -36,7 +36,7 @@ class PermissionFixtures extends Fixture implements FixtureGroupInterface, Depen
     public static function getGroups(): array
     {
         return [
-            'zebra',
+            'easy-acl',
         ];
     }
 
