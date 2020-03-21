@@ -38,10 +38,12 @@ class AddressFixtures extends Fixture implements FixtureGroupInterface, Dependen
 
     public static function getGroups(): array
     {
-        return ['zebra'];
+        return [
+            'zebra',
+        ];
     }
 
-    public function getDependencies()
+    public function getDependencies(): array
     {
         return [
             UserFixtures::class,
