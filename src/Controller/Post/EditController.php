@@ -2,11 +2,11 @@
 
 namespace App\Controller\Post;
 
-use App\Controller\TokenAuthenticatedController;
+use App\Controller\AccessTokenController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
 
-class EditController implements TokenAuthenticatedController
+class EditController implements AccessTokenController
 {
     public function index(Request $request)
     {

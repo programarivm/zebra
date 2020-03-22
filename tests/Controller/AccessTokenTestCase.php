@@ -4,11 +4,11 @@ namespace App\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
-abstract class TokenAuthenticatedWebTestCase extends WebTestCase
+abstract class AccessTokenTestCase extends WebTestCase
 {
     protected static $accessToken;
 
-    public static function setUpBeforeClass()
+    public function setUp()
     {
         $user = [
             'username' => 'alice',

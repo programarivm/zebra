@@ -2,7 +2,7 @@
 
 namespace App\EventSubscriber;
 
-use App\Controller\TokenAuthenticatedController;
+use App\Controller\AccessTokenController;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpKernel\Event\ControllerEvent;
 use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
@@ -22,7 +22,7 @@ class TokenSubscriber implements EventSubscriberInterface
 
         // TODO
         // Authenticate and authorize (ACL)
-        if ($controller instanceof TokenAuthenticatedController) {
+        if ($controller instanceof AccessTokenController) {
             $token = $event->getRequest()->query->get('token');
             if (empty($token)) {
                 throw new AccessDeniedHttpException('This action needs a valid token!');

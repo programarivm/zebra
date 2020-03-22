@@ -2,9 +2,9 @@
 
 namespace App\Tests\Controller\Post;
 
-use App\Tests\Controller\TokenAuthenticatedWebTestCase;
+use App\Tests\Controller\AccessTokenTestCase;
 
-class DeleteControllerTest extends TokenAuthenticatedWebTestCase
+class DeleteControllerTest extends AccessTokenTestCase
 {
     /**
      * @test
