@@ -20,11 +20,11 @@ class PermissionFixtures extends Fixture implements FixtureGroupInterface, Depen
 
     public function load(ObjectManager $manager)
     {
-        foreach ($this->easyAcl->getPermission() as $access) {
-            foreach ($access['routes'] as $route) {
+        foreach ($this->easyAcl->getPermission() as $permission) {
+            foreach ($permission['routes'] as $route) {
                 $manager->persist(
                     (new Permission())
-                        ->setRolename($access['role'])
+                        ->setRolename($permission['role'])
                         ->setRoutename($route)
                 );
             }
