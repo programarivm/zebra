@@ -19,8 +19,8 @@ class RoleFixtures extends Fixture implements FixtureGroupInterface
 
     public function load(ObjectManager $manager)
     {
-        foreach ($this->easyAcl->getPermission() as $key => $access) {
-            $role = (new Role())->setName($access['role']);
+        foreach ($this->easyAcl->getPermission() as $key => $permission) {
+            $role = (new Role())->setName($permission['role']);
             $manager->persist($role);
             $this->addReference("role-$key", $role);
         }
