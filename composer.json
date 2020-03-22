@@ -47,7 +47,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "App\\Tests\\Unit\\": "tests/unit",
+            "App\\Tests\\": "tests",
             "Programarivm\\EasyAclBundle\\Tests\\": "vendor/programarivm/easy-acl-bundle/tests"
         }
     },

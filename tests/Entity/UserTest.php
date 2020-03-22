@@ -1,9 +1,8 @@
 <?php
 
-namespace App\Tests\Unit\Entity;
+namespace App\Tests\Entity;
 
 use App\Entity\User;
-use App\Tests\Unit\Entity\ValidationTestCase;
 
 class UserTest extends ValidationTestCase
 {
