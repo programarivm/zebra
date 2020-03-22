@@ -1,7 +1,12 @@
-api_post_show:
+api_post_create:
+    path:       /api/posts
+    controller: App\Controller\Post\CreateController::index
+    methods:    POST
+
+api_post_delete:
     path:       /api/posts/{id}
-    controller: App\Controller\Post\ShowController::index
-    methods:    GET|HEAD
+    controller: App\Controller\Post\DeleteController::index
+    methods:    DELETE
 
 api_post_edit:
     path:       /api/posts/{id}
