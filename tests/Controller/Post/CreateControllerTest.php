@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Tests\Controller;
+namespace App\Tests\Controller\Post;
 
-use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
+use App\Tests\Controller\TokenAuthenticatedWebTestCase;
 
-class CreateControllerTest extends WebTestCase
+class CreateControllerTest extends TokenAuthenticatedWebTestCase
 {
     /**
      * @test

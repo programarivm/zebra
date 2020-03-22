@@ -1,3 +1,8 @@
+api_auth:
+    path: /api/auth
+    controller: App\Controller\AuthController::index
+    methods: POST
+
 api_post_create:
     path:       /api/posts
     controller: App\Controller\Post\CreateController::index

@@ -6,6 +6,7 @@
         "ext-ctype": "*",
         "ext-iconv": "*",
         "doctrine/annotations": "^1.8",
+        "firebase/php-jwt": "^5.1",
         "programarivm/doctrine-behavior-bundle": "dev-master",
         "programarivm/easy-acl-bundle": "^0.9.01",
         "symfony/console": "5.0.*",
