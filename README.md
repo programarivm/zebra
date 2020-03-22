@@ -1,6 +1,6 @@
 # Zebra
 
-Design methodology that consists in seeding a development database with sample fake data while designing it at the same time. Also this application behaves as a host in order to develop and test Symfony 5 bundles.
+Data-driven database design methodology. Also this application behaves as a host in order to develop and test Symfony 5 bundles.
 
 ---
 
