@@ -11,10 +11,8 @@ class CreateControllerTest extends AccessTokenTestCase
      */
     public function index()
     {
-        $client = static::createClient();
+        self::$client->request('POST', '/api/posts');
 
-        $client->request('POST', '/api/posts');
-
-        $this->assertEquals(200, $client->getResponse()->getStatusCode());
+        $this->assertEquals(200, self::$client->getResponse()->getStatusCode());
     }
 }

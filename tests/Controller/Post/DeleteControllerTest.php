@@ -11,10 +11,8 @@ class DeleteControllerTest extends AccessTokenTestCase
      */
     public function index()
     {
-        $client = static::createClient();
+        self::$client->request('DELETE', '/api/posts/1');
 
-        $client->request('DELETE', '/api/posts/1');
-
-        $this->assertEquals(200, $client->getResponse()->getStatusCode());
+        $this->assertEquals(200, self::$client->getResponse()->getStatusCode());
     }
 }

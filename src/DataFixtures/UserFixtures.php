@@ -30,7 +30,7 @@ class UserFixtures extends Fixture implements FixtureGroupInterface
         $alice->setProps([
             'username' => 'alice',
             'email' => $this->faker->email,
-            'password' => $this->encoder->encodePassword($alice, 'password'),
+            'password' => 'password',
         ]);
         $manager->persist($alice);
         $this->addReference("user-0", $alice);
@@ -39,7 +39,7 @@ class UserFixtures extends Fixture implements FixtureGroupInterface
         $bob->setProps([
             'username' => 'bob',
             'email' => $this->faker->email,
-            'password' => $this->encoder->encodePassword($bob, 'password'),
+            'password' => 'password',
         ]);
         $manager->persist($bob);
         $this->addReference("user-1", $bob);
