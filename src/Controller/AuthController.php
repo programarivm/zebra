@@ -28,8 +28,8 @@ class AuthController extends AbstractController
         }
 
         $token = [
-            "id" => $user->getId(),
-            "exp" => time() + (60 * 60)
+            'sub' => $user->getId(),
+            'exp' => time() + (60 * 60),
         ];
 
         return new Response(
