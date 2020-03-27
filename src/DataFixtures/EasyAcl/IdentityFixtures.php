@@ -21,7 +21,15 @@ class IdentityFixtures extends Fixture implements FixtureGroupInterface, Depende
 
     public function load(ObjectManager $manager)
     {
-        for ($i = 0; $i < UserFixtures::N; $i++) {
+        $alice = $this->getReference("user-0");
+        $superadmin = $this->getReference("role-0");
+        $manager->persist(
+            (new Identity())
+                ->setUser($alice)
+                ->setRole($superadmin)
+        );
+
+        for ($i = 1; $i < UserFixtures::N; $i++) {
             $index = rand(0, count($this->easyAcl->getPermission())-1);
             $user = $this->getReference("user-$i");
             $role = $this->getReference("role-$index");
