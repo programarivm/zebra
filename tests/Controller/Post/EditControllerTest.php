@@ -11,7 +11,17 @@ class EditControllerTest extends AccessTokenTestCase
      */
     public function index()
     {
-        self::$client->request('PUT', '/api/posts/1');
+        self::$client->request(
+            'PUT',
+            '/api/posts/1',
+            [],
+            [],
+            [
+                'HTTP_AUTHORIZATION' => 'Bearer '.self::$accessToken,
+                'CONTENT_TYPE' => 'application/json',
+            ],
+            json_encode([])
+        );
 
         $this->assertEquals(200, self::$client->getResponse()->getStatusCode());
     }

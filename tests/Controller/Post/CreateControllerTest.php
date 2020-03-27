@@ -11,7 +11,17 @@ class CreateControllerTest extends AccessTokenTestCase
      */
     public function index()
     {
-        self::$client->request('POST', '/api/posts');
+        self::$client->request(
+            'POST',
+            '/api/posts',
+            [],
+            [],
+            [
+                'HTTP_AUTHORIZATION' => 'Bearer '.self::$accessToken,
+                'CONTENT_TYPE' => 'application/json',
+            ],
+            json_encode([])
+        );
 
         $this->assertEquals(200, self::$client->getResponse()->getStatusCode());
     }

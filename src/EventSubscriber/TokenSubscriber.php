@@ -3,6 +3,7 @@
 namespace App\EventSubscriber;
 
 use App\Controller\AccessTokenController;
+use Firebase\JWT\JWT;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpKernel\Event\ControllerEvent;
 use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
@@ -20,12 +21,13 @@ class TokenSubscriber implements EventSubscriberInterface
             $controller = $controller[0];
         }
 
-        // TODO
-        // Authenticate and authorize (ACL)
         if ($controller instanceof AccessTokenController) {
-            $token = $event->getRequest()->query->get('token');
-            if (empty($token)) {
-                throw new AccessDeniedHttpException('This action needs a valid token!');
+            $authorization = $event->getRequest()->headers->get('Authorization');
+            $jwt = substr($authorization, 7);
+            try {
+                $decoded = JWT::decode($jwt, getenv('JWT_SECRET'), ['HS256']);
+            } catch (\Exception $e) {
+                throw new AccessDeniedHttpException('Whoops! Access denied.');
             }
         }
     }
