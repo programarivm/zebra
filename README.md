@@ -6,24 +6,24 @@ Data-driven database design methodology. Also this application behaves as a host
 
 ### Set up the Environment
 
-    bash/dev/start.sh
+    $ bash/dev/start.sh
 
 ### Update the Database Schema
 
-    docker exec -itu 1000:1000 zebra_php_fpm php bin/console doctrine:migrations:diff
-    docker exec -itu 1000:1000 zebra_php_fpm php bin/console doctrine:migrations:migrate
+    $ docker exec -itu 1000:1000 zebra_php_fpm php bin/console doctrine:migrations:diff
+    $ docker exec -itu 1000:1000 zebra_php_fpm php bin/console doctrine:migrations:migrate
 
 Alternatively:
 
-    docker exec -itu 1000:1000 zebra_php_fpm php bin/console doctrine:schema:update --force
+    $ docker exec -itu 1000:1000 zebra_php_fpm php bin/console doctrine:schema:update --force
 
 ### Load the Fixtures
 
-    docker exec -itu 1000:1000 zebra_php_fpm php bin/console doctrine:fixtures:load --group=zebra --group=easy-acl
+    $ docker exec -itu 1000:1000 zebra_php_fpm php bin/console doctrine:fixtures:load --group=zebra --group=easy-acl
 
 ### Run the Tests
 
-    docker exec -it zebra_php_fpm php bin/phpunit
+    $ docker exec -it zebra_php_fpm php bin/phpunit
 
 ### Contributions
 
